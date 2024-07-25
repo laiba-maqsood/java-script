@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="parent">
+    <div class="container">monday</div>
+    <div class="container">tuesday</div>
+    <div class="container">wednesday</div>
+    <div class="container">thursday</div>
+    <div class="container">friday</div>
+</div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+    console.log(parent.children)
+    console.log(parent.children[1].innerHTML)
+for (let index = 0; index < parent.children.length; index++) {
+    console.log(parent.children[index].innerHTML);
+    
+}
+//create new element
+const div= document.createElement('div')
+div.id= Math.round((Math.random()*10)+1)
+console.log(div);
+div.className = 'myDv'
+div.setAttribute('title', 'my title') //write this code inside div tag
+div.style.backgroundColor ='green'
+//div.innerHTML='laiba our code'
+div.innerText='laiba our code'
+const addText = document.createTextNode('code code code')
+div.appendChild(addText)
+document.body.appendChild(div)
+</script>
+</html>

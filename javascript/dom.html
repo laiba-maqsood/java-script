@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">dom practice</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus corrupti sapiente inventore.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, mollitia.</p>
+    <p class="para">Lorem, ipsum.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+<script>
+//     const myHeadings = document.getElementsByClassName('para')
+//     dom.html:43 Live reload enabled.
+// docum
+// VM160:1 Uncaught ReferenceError: docum is not defined
+//     at <anonymous>:1:1
+// (anonymous) @ VM160:1Understand this error
+// document.getElementsByClassName('para')
+// HTMLCollection(5) [p.para, p.para, p.para, p.para, p.para]
+// const paragraphslist=document.getElementsByClassName('para')
+// undefined
+// Array.from('paragraphslist')
+// (14) ['p', 'a', 'r', 'a', 'g', 'r', 'a', 'p', 'h', 's', 'l', 'i', 's', 't']
+// Array.from(paragraphslist)
+// (5) [p.para, p.para, p.para, p.para, p.para]0: p.para1: p.para2: p.para3: p.para4: p.paralength: 5[[Prototype]]: Array(0)
+// const myarr=Array.from(paragraphslist)
+// undefined
+// const newarr = myarr.filter( (items)=> items.length > 100 )
+// undefined
+// console.log(newarr)
+// VM678:1 []length: 0[[Prototype]]: Array(0)
+// undefined
+// const newarr = myarr.filter( (items)=> console.log(items[2]) )
+// 5VM777:1 undefined
+// undefined
+// console.log(newarr)
+// VM849:1 []length: 0[[Prototype]]: Array(0)
+// undefined
+// const newarr = myarr.filter( (items)=> items.textContent.lrngth > 100 )
+// undefined
+// cosole.log(newarr)
+// VM942:1 Uncaught ReferenceError: cosole is not defined
+//     at <anonymous>:1:1
+// (anonymous) @ VM942:1Understand this error
+// console.log(newarr)
+
+// undefined
+// const newarr = myarr.filter( (items)=> items.textContent.length > 100 )
+// undefined
+// console.log(newarr)
+// VM1027:1 []length: 0[[Prototype]]: Array(0)
+// undefined
+// const newarr = myarr.filter( (items)=> items.textContent.length > 30 )
+// undefined
+// console.log(newarr)
+// document.getElementsByClassName('heading')
+// HTMLCollection [h1.heading]
+// const myh = document.getElementsByClassName('heading')
+// undefined
+// myh.style.color."green"
+// VM1285:1 Uncaught SyntaxError: Unexpected stringUnderstand this error
+// myh.style.color="green"
+// VM1292:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+//     at <anonymous>:1:16
+// (anonymous) @ VM1292:1Understand this error
+// for(i=0; i< myh.length ;i++){}
+// undefined
+// for(let i=0; i< myh.length ;i++){myh[i].style.color = "green"}
+// 'green'
+// for(let i=0; i< myh.length ;i++){myh[i].style.color = "yellow"}
+// 'yellow'
+// document.querySelector('h1')
+// <h1 class=​"heading" style=​"color:​ yellow;​">​dom practice​</h1>​
+// const myheading=document.querySelector('h1')
+// undefined
+// myheading.style.backgroundColor="black"
+// 'black'
+</script>
+</html>
