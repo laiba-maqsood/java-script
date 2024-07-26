@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colours{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px;
+            
+        }
+        .button{
+            border: solid black;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+
+        }
+        .blue{
+            background-color: blue;
+        }
+        .purple{
+            background-color: purple;
+
+        }
+        .orange{
+            background-color: orange;
+            
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .black{
+            background-color: black;
+            color: white;
+        }
+        .pink{
+            background-color: pink
+        }
+        .grey{
+            background-color: grey;
+        }
+        .red{
+            background-color: red;
+        }
+        .aqua{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to mini Background Color Changer project</h1>
+    <div class="colours">
+        <div id="blue" class="blue button">Blue</div>
+        <div id="purple" class="purple button">Purple</div>
+        <div id="orange" class="orange button">Orange</div>
+        <div id="pink" class="pink button">Pink</div>
+        <div id="black" class="black button">Black</div>
+        <div id="grey" class="grey button">Grey</div>
+        <div id="yellow" class="yellow button">Yellow</div>
+        <div id="red" class="red button">Red</div>
+        <div id="aqua" class="aqua button">Aqua</div>
+    </div>
+    <h2>Click on the color box to change background color!
+        Have Fun ;)
+    </h2>
+</body>
+<script>
+ const buttons= document.querySelectorAll('.button')
+ const body =document.querySelector('body')
+ buttons.forEach(function (button){
+button.addEventListener('click', function(e){
+    if(e.target.id === 'blue'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'purple'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'orange'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'pink'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'black'){
+        body.style.backgroundColor= e.target.id;
+        body.style.color='white'
+
+    }
+    if(e.target.id === 'grey'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'yellow'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'orange'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'aqua'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+    if(e.target.id === 'red'){
+        body.style.backgroundColor= e.target.id;
+
+    }
+})
+ }
+ )
+</script>
+</html>
