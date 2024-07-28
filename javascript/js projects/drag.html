@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drag ,.drop{
+        width: 200px;
+        height: 200px;
+        border:  2px solid black;
+        margin: 20px;
+        display: inline-block;
+            vertical-align: top;
+
+        }
+        .drag{
+            background: url(kids.png) no-repeat center center;
+            background-size: cover;
+           
+        }
+        .drop{
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="drag" id="drag" draggable="true"></div>
+    <div class="drop" id="drop"></div>
+    <p class="msg" id="msg"></p>
+    
+</body>
+<script>
+    const drag=document.querySelector('#drag')
+    const drop=document.querySelector('#drop')
+    const msg=document.querySelector('#msg')
+
+    drag.addEventListener('dragstart', function(e){
+     e.dataTransfer.setData('text/plain', e.target.id)
+    
+
+    })
+    drop.addEventListener('dragover',function(e){
+        e.preventDefault()
+       
+
+    })
+    drop.addEventListener('drop',function(e){
+        e.preventDefault()
+        const data= e.dataTransfer.getData('text')
+        if(data=='drag'){
+           
+                    e.target.appendChild(drag)
+            
+            msg.textContent='Correct placement!'
+            msg.style.color='green'
+        }
+        else{
+             msg.textContent='InCorrect placement!'
+            msg.style.color='red'
+        }
+    })
+</script>
+</html>
